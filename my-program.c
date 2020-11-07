@@ -61,12 +61,12 @@ int main(int argc, char *argv[]){
                             printf("R\n");
                         }
                         else{
-                            printf("RE\n");
+                            printf("E\n");
                             exit(0);
                         }
                     }
                     else{
-                        printf("RE\n");
+                        printf("E\n");
                         exit(0);
                     }
                 }
