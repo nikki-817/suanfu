@@ -29,6 +29,7 @@ int main(int argc, char *argv[]){
     fp = fopen(argv[1], "r");
     //fp = fopen("input.txt", "r");
     fscanf(fp, "%s", str);
+    printf("%s\n",str);
     while(1){
         if(i==strlen(str)){
             while(1){
@@ -61,12 +62,12 @@ int main(int argc, char *argv[]){
                             printf("R\n");
                         }
                         else{
-                            printf("E\n");
+                            printf("RE\n");
                             exit(0);
                         }
                     }
                     else{
-                        printf("E\n");
+                        printf("RE\n");
                         exit(0);
                     }
                 }
