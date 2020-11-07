@@ -5,7 +5,7 @@
 FILE *fp;
 char str[1000];
 int stack[1000];
-int m[6][6]={{0,-1,-1,-1,-1,-1},{1,1,-1,-1,-1,1},{1,1,1,-1,-1,1},{1,1,1,0,0,1},{1,-1,-1,-1,-1,1},{1,1,1,0,0,1}};
+int m[6][6]={{0,-1,-1,-1,-1,-1},{1,1,-1,-1,-1,1},{1,1,1,-1,-1,1},{1,1,1,0,0,1},{1,-1,-1,-1,-1,-1},{1,1,1,0,0,1}};
 int change(char c){
     switch(c){
         case '+':
@@ -56,6 +56,7 @@ int main(int argc, char *argv[]){
                         else if(stack[top-2]==4&&stack[top-1]==6&&stack[top]==5){
                             stack[top-1]=0;
                             stack[top]=0;
+                            stack[top-2]=6;
                             top-=2;
                             printf("R\n");
                         }
@@ -121,6 +122,7 @@ int main(int argc, char *argv[]){
                 else if(stack[top-2]==4&&stack[top-1]==6&&stack[top]==5){
                     stack[top-1]=0;
                     stack[top]=0;
+                    stack[top-2]=6;
                     top-=2;
                     printf("R\n");
                 }
